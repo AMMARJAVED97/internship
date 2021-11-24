@@ -1,3 +1,4 @@
+// Abdul Qadir
 const firebaseConfig = {
     apiKey: "AIzaSyCTY5YEi9ICFuS8xe0GNx0KxkzENdDEeNs",
     authDomain: "intern-1776c.firebaseapp.com",
@@ -10,14 +11,12 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
   let firebase_db = firebase.firestore();
-// //Register
+  //Register
 async function signup() {
   let username = document.getElementById('username').value
   let useremail = document.getElementById('useremail').value
   let userpass = document.getElementById('userpassword').value
-  //let usercontact = document.getElementById('userphnno').value
-  //console.log(usercontact)
-  //usercontact.toString()
+
   try {
       await firebase.auth().createUserWithEmailAndPassword(useremail, userpass)
       const user = await firebase.auth().currentUser
@@ -30,7 +29,7 @@ async function signup() {
         )
       }
       console.log(user.displayName)
-   //  window.location = "./login.html"
+   window.location = "./home.html"
   }
   catch (error) {
     console.log(error.message)
@@ -44,7 +43,6 @@ async function login() {
   try {
     let loginResult = await firebase.auth().signInWithEmailAndPassword(loggeduseremail, loggeduserpass)
     
-   //window.location = "./profile.html"
   }
   catch (error) {
     alert("Your Crediential are not valid, Kindly recheck your crediential")
