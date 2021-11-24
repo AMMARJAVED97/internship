@@ -1,9 +1,0 @@
-        const firebaseConfig = {
-  apiKey: "AIzaSyCTY5YEi9ICFuS8xe0GNx0KxkzENdDEeNs",
-  authDomain: "intern-1776c.firebaseapp.com",
-  projectId: "intern-1776c",
-  storageBucket: "intern-1776c.appspot.com",
-  messagingSenderId: "849921290488",
-  appId: "1:849921290488:web:17aaf0feb28cf1b022cb0d",
-  measurementId: "G-1L049ZZC1C"
-};
